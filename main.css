@@ -1,8 +1,9 @@
 body {
+    background: #b6f0eb;
     font-size: 25px;
     font-family: "Wawati SC", sans-serif;
     font-weight: normal;
-    color: lightskyblue;
+    color: #6fd8ff;
     line-height: 80px;
     text-align: center;
 }
