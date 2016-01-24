@@ -1,0 +1,15 @@
+body {
+    font-size: 25px;
+    font-family: "Wawati SC", sans-serif;
+    font-weight: normal;
+    color: lightskyblue;
+    line-height: 80px;
+    text-align: center;
+}
+
+body div {
+    background: url("nyanpass.png") no-repeat;
+    width: 290px;
+    height: 430px;
+    margin: auto;
+}
