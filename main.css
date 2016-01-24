@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-body div {
+body div.nyanpass {
     background: url("nyanpass.png") no-repeat;
     width: 290px;
     height: 430px;
