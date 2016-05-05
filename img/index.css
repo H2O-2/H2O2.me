@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: black;
+}
+
+body a {
+    color: #000;
+}
+
+.wrapper {
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: -9999;
+    height: 100%;
+    width: 100%;
+    background: url("intro.jpg") -20px 0 no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.wrapper img {
+    position: absolute;
+    left: 0;
+    top: auto;
+    z-index: -9999;
+    max-width: none;
+    /*width: 100%;*/
+}
+
+@font-face {
+    font-family: "PingFang SC";
+    src: url('Ultralight.otf');
+    font-weight: 100;
+}
+
+.move {
+    display: inline;
+    position: absolute;
+    width: 155px;
+    height: 100px;
+    z-index: 9999;
+}
+
+#move_ch {
+    left: 38%;
+    top: 13%;
+}
+
+#move_en {
+    left: 38%;
+    top: 13%;
+}
+
+#move_jp {
+    left: 38%;
+    top: 13%;;
+}
+
+.index_text {
+    height: 100%;
+    width: 71%;
+    float: left;
+}
+
+.ch, .en, .jp {
+    width: 100%;
+    height: 20%;
+    margin: 90px auto;
+    font-size: 30px;
+}
+
+.ch {
+    margin-top: 70px;
+}
+
+.option {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.option h2 {
+    position: absolute;
+    padding: 4% 0 0 39%;
+    text-align: center;
+    color: #d8d8d8;
+    font-weight: 100;
+    font-family: "PingFang SC", sans-serif;
+    text-shadow: 0 0 1px white, 0 0 3px #def1f5;
+    cursor: pointer;
+    height: 100%;
+    float: left;
+    transition: transform 1s;
+    transition-delay: .1s;
+    transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -moz-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -webkit-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -o-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+}
+
+.ch a h2 {
+    letter-spacing: 4px;
+}
+
+.en a h2 {
+    letter-spacing: 6px;
+}
+
+.jp a h2 {
+    letter-spacing: 23px;
+}
+
+
+/*
+a :hover {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+*/
+
+.welcome {
+    display: inline;
+    opacity: 0;
+    position: absolute;
+    left: 67%;
+    top: 25%;
+    text-align: center;
+    color: #d8d8d8;
+    font-weight: 100;
+    font-family: "PingFang SC", sans-serif;
+    letter-spacing: 6px;
+    text-shadow: 0 0 1px white, 0 0 3px #def1f5;
+    transition: opacity .5s;
+    transition-delay: .5s;
+    transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -moz-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -webkit-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+    -o-transition-timing-function: cubic-bezier(.5,.13,.37,1);
+}
+
+.ch .welcome {
+    letter-spacing: 25px;
+}

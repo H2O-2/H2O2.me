@@ -1,0 +1,389 @@
+
+
+@font-face {
+    font-family: "PingFang SC";
+    src: url('Ultralight.otf');
+}
+
+html, body {
+    margin: 0;
+
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid white;
+}
+
+a {
+    cursor: pointer;
+}
+
+/*************** HEADER ***************/
+div.header {
+    height: 100%;
+    width: 100%;
+}
+
+.h_content {
+    position: relative;
+    height: 25%;
+    width: 100%;
+}
+
+.h_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 41%;
+}
+
+.h_content h1,.h_content p{
+    font-family: "PingFang SC", sans-serif;
+    font-size: 47px;
+    color: #d0d0d0;
+    font-variant: small-caps;
+    font-weight: 100;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.h_content h1 {
+    margin-right: 26%;
+}
+
+.h_content p {
+    font-size: 35px;
+    margin-left: 54%;
+    letter-spacing: 8px;
+}
+
+.h_content a {
+    display: block;
+    width: 102px;
+    height: 63px;
+    margin: 4% auto 0 auto;
+    background: url("arrow.png") no-repeat;
+}
+
+div.wrapper_h {
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: -99;
+    height: 100%;
+    width: 100%;
+    background: url("header.jpg") no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+div.background_h {
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: -9999;
+    height: 100%;
+    width: 100%;
+    background: black;
+    background-size: cover;
+}
+
+
+/*************** BODY ***************/
+.web_body {
+    background-color: #464646;
+}
+
+.wrapper_b {
+    margin: 0 215px;
+    padding: 100px 0 200px 0;
+}
+
+.head h2 {
+    text-align: right;
+    color: #2cb2ff;
+    font-size: 70px;
+    font-variant: small-caps;
+}
+
+.head hr {
+    border-color: #b7b7b7;
+    opacity: 0.8;
+    margin-top: 60px;
+}
+
+/* Profile */
+.pro_body {
+    margin-top: 180px;
+}
+
+.pro_body .pro_left {
+    float: left;
+    margin: -55px 0 0 140px;
+}
+
+.pro_body .pro_right {
+    float: right;
+    margin: -55px 0 0 0;
+}
+
+.lst_style {
+    display: inline;
+    float: left;
+}
+
+.style_right {
+    float: right;
+}
+
+.p_orange {
+    list-style: disc;
+}
+
+.p_blue {
+    list-style: circle;
+}
+
+.pro_body ul {
+    font-size: 20px;
+}
+
+.p_left {
+    float: left;
+}
+
+.p_right {
+    float: right;
+}
+
+.p_blue span {
+    font-size: 12px;
+}
+
+.p_orange span {
+    font-size: 12px;
+}
+
+.pro_body .p_orange {
+    color: #ffa800;
+}
+
+.pro_body .p_blue {
+    color: #2cb2ff;
+}
+
+.left_1, .right_1 {
+    margin-bottom: 90px;
+}
+
+.right_1 {
+
+}
+
+.left_2, .right_2{
+    margin: 0 0 90px -150px;
+}
+
+.right_2 {
+    margin-left: 80px;
+}
+
+.lst_style .left_3 {
+    margin-top: 150px;
+}
+
+.lst_style .right_3 {
+    padding-top: 60px;
+}
+
+.right_3 {
+
+}
+
+.p_img {
+    background: url("profile.png") no-repeat;
+    width: 220px;
+    height: 218px;
+    margin: 0 auto;
+}
+
+.pro_right li {
+    list-style: circle;
+    color: #2cb2ff;
+}
+
+.pro_right .p_orange {
+    list-style: disc;
+}
+
+.pro_right li p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-variant: normal;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 200;
+}
+
+/* Abilities */
+
+.abilities {
+    margin: 280px 0 770px 0;
+}
+
+.ab_body {
+    margin-top: 120px;
+}
+
+.ab_body .ab_lst {
+    float: left;
+    margin: 0 22px;
+}
+
+.ab_body h3 {
+    color: #ffa800;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.ab_lst div {
+    float: right;
+    margin-top: 6px;
+}
+
+.ab_body ul {
+    float: left;
+}
+
+.ab_body li {
+    margin-top: 35px;
+}
+
+.ab_body img {
+
+}
+
+.ab_body p {
+    font-size: 25px;
+    text-align: left;
+    opacity: .8;
+    float: left;
+}
+
+.ab_body .item2 {
+    margin-top: 22px;
+}
+
+.skill li {
+    margin-top: 86px;
+}
+
+.skill li:first-child {
+    margin-top: 95px;
+}
+
+.design li:first-child {
+    margin-top: 70px;
+}
+
+.language li:first-child {
+    margin-top: 70px;
+}
+
+.language p {
+    margin-top: 28px;
+    font-size: 24px;
+}
+
+.skill li:first-child div {
+    margin-right: 60px;
+}
+
+.skill li:nth-child(2) div {
+    margin-left: 36px;
+}
+
+.skill li:nth-child(3) div {
+    margin-right: 80px;
+}
+
+.design li:first-child div {
+    margin-right: 36px;
+}
+
+.design li:nth-child(2) div {
+    margin-right: 45px;
+}
+
+.design li:nth-child(3) div {
+    margin-left: 36px;
+}
+
+.design li:nth-child(4) div {
+    margin-right: 11px;
+}
+
+.language li:first-child div {
+    margin-right: 24px;
+}
+
+.language li:nth-child(2) div {
+    margin-right: 32px;
+}
+
+.language li:nth-child(3) div {
+    margin-left: 35px;
+}
+
+.language li:nth-child(4) div {
+    margin-right: 16px;
+}
+
+.language li:nth-child(4) {
+    margin-right: 3px;
+    opacity: .5;
+}
+
+.language .german {
+    font-size: 21px;
+    font-variant: small-caps;
+    margin: 6px 0 0 0px;
+}
+
+/*************** FOOTER ***************/
+
+footer {
+}
+
+.foot_wrap {
+    margin: 0 215px;
+    padding: 100px 0 200px 0;
+}
+
+.foot_h h3 {
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: #D4D4D4;
+    font-weight: 200;
+    text-align: center;
+}
+
+.foot_h hr {
+    border-color: #666666;
+    margin-top: 80px;
+}
+
+.foot_wrap .icons {
+    margin-top: 80px;
+}
+
+.icons img {
+    margin-left: 80px;
+}
+
+.icons a:nth-child(4) img {
+    margin-bottom: 7px;
+}

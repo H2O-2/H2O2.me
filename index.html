@@ -3,14 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>H2O2</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="img/reset.css">
+    <link rel="stylesheet" type="text/css" href="img/index.css">
+    <script type="text/javascript" src="img/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function (){
+            $(".move").mouseenter(function () {
+                $(".wrapper").fadeTo(800, 0.2);
+                $(this).siblings("h2").css("transform", "translateX(-50%)");
+                /*$(this).siblings("p").animate({opacity: "100"}, 500, 'linear');  success*/
+                /*$("p").fadeIn(500).css("display", "inline");*/
+                /*$(this).siblings("p").delay(500).animate({opacity:})*/
+                $(this).siblings("p").css("opacity", "100");
+                $(this).siblings("p").css("transition-delay", "0");
+            });
+            $(".move").mouseleave(function () {
+                $(".wrapper").fadeTo(300, .8);
+                $(this).siblings("h2").css("transform", "translateX(0)");
+                /*$(this).siblings("p").delay(-500).animate({opacity: '0'}, 50, 'linear'); success*/
+                $(this).siblings("p").css("opacity", "0");
+                $(this).siblings("p").css("transition-delay", ".5");
+            });
+        });
+    </script>
 </head>
 <body>
-    <div>
-        <h1>建站中...</h1>
-        <h1>This site is under construction...</h1>
-        <h1>ただいま工事中です...</h1>
+    <div class="index_text">
+        <div class="ch">
+            <a href="ch/index_ch.html" class="option">
+                <div class="move" id="move_ch"></div>
+                <h2>简体中文</h2>
+                <p class="welcome">欢迎</p>
+            </a>
+        </div>
+        <div class="en">
+            <a href="en/index_en.html" class="option">
+                <div class="move" id="move_en"></div>
+                <h2>English</h2>
+                <p class="welcome">Welcome</p>
+            </a>
+        </div>
+        <div class="jp">
+            <a href="jp/index_jp.html" class="option">
+                <div class="move" id="move_jp"></div>
+                <h2>日本語</h2>
+                <p class="welcome">ようこそ</p>
+            </a>
+        </div>
     </div>
-    <div class="nyanpass"></div>
+    <div class="wrapper"><!--<img src="img/background_test.jpg"> --></div>
 </body>
 </html>
