@@ -1,13 +1,33 @@
-
-
 @font-face {
     font-family: "PingFang SC";
     src: url('Ultralight.otf');
 }
 
+
+
+/*@media screen and (max-width: 1024px) {
+    html {
+        font-size: 10px;
+    }
+
+    div.wrapper_b {
+        width: 700px;
+    }
+}*/
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 12px;
+    }
+
+    div.wrapper_b {
+        width: 800px;
+    }
+
+}
+
 html, body {
     margin: 0;
-
 }
 
 hr {
@@ -17,6 +37,10 @@ hr {
 
 a {
     cursor: pointer;
+}
+
+img {
+
 }
 
 /*************** HEADER ***************/
@@ -35,12 +59,12 @@ div.header {
     position: relative;
     height: 100%;
     width: 100%;
-    margin-top: 41%;
+    margin-top: 40%;
 }
 
 .h_content h1,.h_content p{
     font-family: "PingFang SC", sans-serif;
-    font-size: 47px;
+    font-size: 3rem;
     color: #d0d0d0;
     font-variant: small-caps;
     font-weight: 100;
@@ -53,15 +77,15 @@ div.header {
 }
 
 .h_content p {
-    font-size: 35px;
+    font-size: 2.9em;
     margin-left: 54%;
     letter-spacing: 8px;
 }
 
 .h_content a {
     display: block;
-    width: 102px;
-    height: 63px;
+    width: 8.5em;
+    height: 5.3em;
     margin: 4% auto 0 auto;
     background: url("arrow.png") no-repeat;
 }
@@ -89,21 +113,30 @@ div.background_h {
     background-size: cover;
 }
 
-
 /*************** BODY ***************/
 .web_body {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
     background-color: #464646;
 }
 
+.head h2 {
+    font-weight: 200;
+    letter-spacing: 9px;
+}
+
 .wrapper_b {
-    margin: 0 215px;
-    padding: 100px 0 200px 0;
+    width: 1010px;
+    margin: 0 auto;
+    padding: 100px 0 80px 0;
 }
 
 .head h2 {
     text-align: right;
     color: #2cb2ff;
-    font-size: 70px;
+    font-size: 4.4rem;
     font-variant: small-caps;
 }
 
@@ -115,17 +148,17 @@ div.background_h {
 
 /* Profile */
 .pro_body {
-    margin-top: 180px;
+    margin-top: 18%;
 }
 
 .pro_body .pro_left {
     float: left;
-    margin: -55px 0 0 140px;
+    margin: -5% 0 0 14%;
 }
 
 .pro_body .pro_right {
     float: right;
-    margin: -55px 0 0 0;
+    margin: -5% 0 0 0;
 }
 
 .lst_style {
@@ -146,7 +179,7 @@ div.background_h {
 }
 
 .pro_body ul {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .p_left {
@@ -158,11 +191,11 @@ div.background_h {
 }
 
 .p_blue span {
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .p_orange span {
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .pro_body .p_orange {
@@ -174,31 +207,23 @@ div.background_h {
 }
 
 .left_1, .right_1 {
-    margin-bottom: 90px;
-}
-
-.right_1 {
-
+    margin-bottom: 5.625rem;
 }
 
 .left_2, .right_2{
-    margin: 0 0 90px -150px;
+    margin: 0 0 5.625rem -9.375rem;
 }
 
 .right_2 {
-    margin-left: 80px;
+    margin-left: 5rem;
 }
 
 .lst_style .left_3 {
-    margin-top: 150px;
+    margin-top: 9.375rem;
 }
 
 .lst_style .right_3 {
-    padding-top: 60px;
-}
-
-.right_3 {
-
+    padding-top: 3.75rem;
 }
 
 .p_img {
@@ -217,34 +242,26 @@ div.background_h {
     list-style: disc;
 }
 
-.pro_right li p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-variant: normal;
-    color: #ffffff;
-    text-align: left;
-    font-weight: 200;
-}
-
 /* Abilities */
 
 .abilities {
-    margin: 280px 0 770px 0;
+    margin-top: 17.5rem;
 }
 
 .ab_body {
-    margin-top: 120px;
+    width: 950px;
+    height: 800px;
+    margin: 7.5rem auto 0 auto;
 }
 
 .ab_body .ab_lst {
     float: left;
-    margin: 0 22px;
+    margin: 0 1rem;
 }
 
 .ab_body h3 {
     color: #ffa800;
-    font-size: 50px;
+    font-size: 3.1rem;
     font-weight: 200;
     text-align: center;
 }
@@ -262,12 +279,8 @@ div.background_h {
     margin-top: 35px;
 }
 
-.ab_body img {
-
-}
-
 .ab_body p {
-    font-size: 25px;
+    font-size: 1.55rem;
     text-align: left;
     opacity: .8;
     float: left;
@@ -299,51 +312,51 @@ div.background_h {
 }
 
 .skill li:first-child div {
-    margin-right: 60px;
+    margin-right: 3.75rem;
 }
 
 .skill li:nth-child(2) div {
-    margin-left: 36px;
+    margin-left: 2.3rem;
 }
 
 .skill li:nth-child(3) div {
-    margin-right: 80px;
+    margin-right: 5rem;
 }
 
 .design li:first-child div {
-    margin-right: 36px;
+    margin-right: 2.2rem;
 }
 
 .design li:nth-child(2) div {
-    margin-right: 45px;
+    margin-right: 2.81rem;
 }
 
 .design li:nth-child(3) div {
-    margin-left: 36px;
+    margin-left: 1.8rem;
 }
 
 .design li:nth-child(4) div {
-    margin-right: 11px;
+    margin-right: 0.69rem;
 }
 
 .language li:first-child div {
-    margin-right: 24px;
+    margin-right: 1.5rem;
 }
 
 .language li:nth-child(2) div {
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 .language li:nth-child(3) div {
-    margin-left: 35px;
+    margin-left: 2.19rem;
 }
 
 .language li:nth-child(4) div {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .language li:nth-child(4) {
-    margin-right: 3px;
+    margin-right: 0.19rem;
     opacity: .5;
 }
 
@@ -359,12 +372,13 @@ footer {
 }
 
 .foot_wrap {
-    margin: 0 215px;
+    width: 1010px;
+    margin: 0 auto;
     padding: 100px 0 200px 0;
 }
 
 .foot_h h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "Open Sans", sans-serif;
     color: #D4D4D4;
     font-weight: 200;
@@ -380,10 +394,50 @@ footer {
     margin-top: 80px;
 }
 
-.icons img {
-    margin-left: 80px;
+.foot_wrap a {
+    margin-left: 90px;
 }
 
-.icons a:nth-child(4) img {
+.foot_wrap a:first-child {
+    display: inline-block;
+    background: url("twitter.png") no-repeat;
+    width: 65px;
+    height: 64px;
+    margin-left: 77px;
+}
+
+.foot_wrap a:nth-child(2) {
+    display: inline-block;
+    background: url("weibo.png") no-repeat;
+    width: 65px;
+    height: 64px;
+}
+
+.foot_wrap a:nth-child(3) {
+    display: inline-block;
+    background: url("bilibili.png") no-repeat;
+    width: 62px;
+    height: 62px;
+}
+
+.foot_wrap a:nth-child(4){
+    display: inline-block;
+    background: url("youtube.png") no-repeat;
+    width: 67px;
+    height: 47px;
     margin-bottom: 7px;
+}
+
+.foot_wrap a:nth-child(5) {
+    display: inline-block;
+    background: url("github.png") no-repeat;
+    width: 63px;
+    height: 61px;
+}
+
+.foot_wrap a:nth-child(6) {
+    display: inline-block;
+    background: url("mail.png") no-repeat;
+    width: 61px;
+    height: 61px;
 }

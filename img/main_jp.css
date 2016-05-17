@@ -1,5 +1,57 @@
-div.title {
-    font-size: 45px;
-    letter-spacing: 10px;
-    margin: 120px auto 180px auto;
+@font-face {
+    font-family: "PingFang SC";
+    src: url('Ultralight.otf');
+}
+
+.pro_body li p {
+    font-family: "PingFang SC", sans-serif;
+    letter-spacing: 2px;
+    font-variant: normal;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 100;
+}
+
+.ab_body h3 {
+    font-family: "PingFang SC", sans-serif;
+    font-weight: 300;
+}
+
+.language p {
+    font-size: 1.75rem;
+    font-family: "PingFang SC", sans-serif;
+    font-weight: 200;
+}
+
+.pro_left ul li .Katakana {
+    letter-spacing: 0;
+}
+
+.pro_left ul li  .kanji {
+    letter-spacing: 3px;
+}
+
+.pro_left ul li.left_2 {
+    margin-left: -130px;
+}
+
+.abilities .ab_body .language div {
+    margin-right: 0;
+}
+
+.abilities .language ul li:nth-child(2) div {
+    margin-right: 1.75rem;
+}
+
+.abilities .language ul li:nth-child(4) div {
+    margin-right: -2.125rem;
+}
+
+.abilities .language ul li:nth-child(4) div p:first-child{
+    margin-left: -1.31rem;
+}
+
+footer .foot_wrap h3 {
+    font-family: "PingFang SC", sans-serif;
+    font-weight: 100;
 }

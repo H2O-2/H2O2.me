@@ -3,15 +3,10 @@
     letter-spacing: 6px;
     margin: 120px auto 180px auto;
 }*/
-
-.web_body {
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-    font-weight: 200;
+.pro_body li p {
     letter-spacing: 2px;
-}
-
-.head h2 {
+    font-variant: normal;
+    color: #ffffff;
+    text-align: left;
     font-weight: 200;
-    letter-spacing: 9px;
 }
