@@ -1,3 +1,25 @@
+<!--
+/////////////////////////////////////////////////////////////////
+
+            　 　 |＼　　 　 　 　 　／|
+            　 　 |＼＼　　 　 　 ／／|
+            　　　 :  ,>　｀´￣｀´　<　′　　契約の予感ッ・・・！！
+             ＿＿＿Ｖ　 　 　 　 　 　Ｖ＿∧,､＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+             ￣￣￣i{　　 ●　　 　 ● }i￣'`'``￣￣￣￣￣￣￣￣￣￣￣￣￣
+            　　　  八//// ､_,_,////八
+            .　　 /　个 . ＿　＿ .个 ',
+            　＿/ 　il 　 ,'　　　 '.　 li　 ',＿_
+
+
+                   さぁ早く 僕と契約を！
+
+
+
+Emoji from http://momokami.net/kotonoha/qb.html
+
+H2O2 2016.5.4
+////////////////////////////////////////////////////////////////////
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,29 +27,10 @@
     <title>H2O2</title>
     <link rel="stylesheet" type="text/css" href="img/reset.css">
     <link rel="stylesheet" type="text/css" href="img/index.css">
-    <script type="text/javascript" src="img/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript">
-        $("document").ready(function (){
-            $(".move").mouseenter(function () {
-                $(".wrapper").fadeTo(800, 0.2);
-                $(this).siblings("h2").css("transform", "translateX(-50%)");
-                /*$(this).siblings("p").animate({opacity: "100"}, 500, 'linear');  success*/
-                /*$("p").fadeIn(500).css("display", "inline");*/
-                /*$(this).siblings("p").delay(500).animate({opacity:})*/
-                $(this).siblings("p").css("opacity", "100");
-                $(this).siblings("p").css("transition-delay", "0");
-            });
-            $(".move").mouseleave(function () {
-                $(".wrapper").fadeTo(300, .8);
-                $(this).siblings("h2").css("transform", "translateX(0)");
-                /*$(this).siblings("p").delay(-500).animate({opacity: '0'}, 50, 'linear'); success*/
-                $(this).siblings("p").css("opacity", "0");
-                $(this).siblings("p").css("transition-delay", ".5");
-            });
-        });
-    </script>
 </head>
 <body>
+    <!--------------------------------------- Loading Page plz ------------------------------------------>
+    <div class="wrapper"><!--<img src="img/background_test.jpg"> --></div>
     <div class="index_text">
         <div class="ch">
             <a href="ch/index_ch.html" class="option">
@@ -51,6 +54,24 @@
             </a>
         </div>
     </div>
-    <div class="wrapper"><!--<img src="img/background_test.jpg"> --></div>
+    <script type="text/javascript" src="img/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="img/jquery.bez.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function (){
+            $(".move").mouseenter(function () {
+                $(".wrapper").fadeTo(800, 0.2);
+                $(this).siblings("h2").delay(150).animate({left: "-25%" }, 1000, $.bez([.5,.13,.37,1]));
+                $(this).siblings("p").delay(500).fadeIn(500);
+            }).mouseleave(function () {
+                $(".wrapper").fadeTo(300, .8);
+                $(this).siblings("h2").delay(150).animate({left: "0" }, 1000, $.bez([.5,.13,.37,1]));
+                $(this).siblings("p").fadeOut(500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        document.write(Number.MAX_VALUE + "<br />");
+    </script>
+    <noscript><h3>NEED JAVASCRIPT!</h3></noscript>
 </body>
 </html>

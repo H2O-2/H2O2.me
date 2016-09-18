@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PingFang SC";
-    src: url('Ultralight.otf');
+    src: url('Ultralight.otf') format("opentype");
 }
 
 
@@ -23,24 +23,27 @@
     div.wrapper_b {
         width: 800px;
     }
+}
 
+@media only screen and (max-width: 500px) {
+    html { font-size:50%; -webkit-text-size-adjust:none; }  /* should render everything * 0.8 */
 }
 
 html, body {
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern';
 }
 
 hr {
     border: 0;
-    border-top: 1px solid white;
+    border-top: 0.083rem solid white;
 }
 
 a {
     cursor: pointer;
-}
-
-img {
-
 }
 
 /*************** HEADER ***************/
@@ -63,12 +66,12 @@ div.header {
 }
 
 .h_content h1,.h_content p{
-    font-family: "PingFang SC", sans-serif;
+    font-family: "PingFang SC", "Open Sans", sans-serif;
     font-size: 3rem;
     color: #d0d0d0;
     font-variant: small-caps;
     font-weight: 100;
-    letter-spacing: 10px;
+    letter-spacing: 0.83rem;
     text-align: center;
 }
 
@@ -79,11 +82,11 @@ div.header {
 .h_content p {
     font-size: 2.9em;
     margin-left: 54%;
-    letter-spacing: 8px;
+    letter-spacing: 0.667rem;
 }
 
-.h_content a {
-    display: block;
+.h_content #scrollDown {
+    cursor: pointer;
     width: 8.5em;
     height: 5.3em;
     margin: 4% auto 0 auto;
@@ -97,9 +100,12 @@ div.wrapper_h {
     z-index: -99;
     height: 100%;
     width: 100%;
-    background: url("header.jpg") no-repeat;
+    background: url("header.jpg") repeat-x;
     background-size: cover;
     opacity: 1;
+    /*-webkit-filter: none;
+    -ms-filter: none;
+    filter: none;*/
 }
 
 div.background_h {
@@ -118,19 +124,19 @@ div.background_h {
     font-family: "Open Sans", sans-serif;
     color: #fff;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: .1rem;
     background-color: #464646;
 }
 
 .head h2 {
     font-weight: 200;
-    letter-spacing: 9px;
+    letter-spacing: 0.75rem;
 }
 
 .wrapper_b {
-    width: 1010px;
+    width: 64rem;
     margin: 0 auto;
-    padding: 100px 0 80px 0;
+    padding: 6.25rem 0 5rem 0;
 }
 
 .head h2 {
@@ -143,22 +149,22 @@ div.background_h {
 .head hr {
     border-color: #b7b7b7;
     opacity: 0.8;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 /* Profile */
 .pro_body {
-    margin-top: 18%;
+    margin-top: 11.5rem;
 }
 
 .pro_body .pro_left {
     float: left;
-    margin: -5% 0 0 14%;
+    margin: -3.3rem 0 0 9rem;
 }
 
 .pro_body .pro_right {
     float: right;
-    margin: -5% 0 0 0;
+    margin: -3.3rem 0 0 0;
 }
 
 .lst_style {
@@ -228,9 +234,11 @@ div.background_h {
 
 .p_img {
     background: url("profile.png") no-repeat;
-    width: 220px;
-    height: 218px;
+    width: 14rem;
+    height: 13.9rem;
     margin: 0 auto;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .pro_right li {
@@ -249,26 +257,26 @@ div.background_h {
 }
 
 .ab_body {
-    width: 950px;
-    height: 800px;
+    width: 59.38rem;
+    height: 50rem;
     margin: 7.5rem auto 0 auto;
-}
-
-.ab_body .ab_lst {
-    float: left;
-    margin: 0 1rem;
 }
 
 .ab_body h3 {
     color: #ffa800;
-    font-size: 3.1rem;
+    font-size: 3rem;
     font-weight: 200;
     text-align: center;
 }
 
 .ab_lst div {
     float: right;
-    margin-top: 6px;
+    margin-top: 0.375rem;
+}
+
+.ab_lst {
+    float: left;
+    margin: 0 .9rem;
 }
 
 .ab_body ul {
@@ -276,7 +284,20 @@ div.background_h {
 }
 
 .ab_body li {
-    margin-top: 35px;
+    margin-top: 2.188rem;
+    height: 7rem;
+}
+
+.skill li {
+    width: 20.9rem;
+}
+
+.design li {
+    width: 19.7rem;
+}
+
+.language li {
+    width: 16.1rem;
 }
 
 .ab_body p {
@@ -287,84 +308,131 @@ div.background_h {
 }
 
 .ab_body .item2 {
-    margin-top: 22px;
+    margin-top: 1.375rem;
+}
+
+.ab_body .ab_text {
+    margin-left: 1.938rem;
+}
+
+/******images*****/
+.ab_description {
+    margin: 0 auto;
+}
+
+.skill .front_end {
+    background: url("markup.png") no-repeat;
+    background-size: cover;
+}
+
+.skill .js {
+    background: url("js.png") no-repeat;
+    background-size: cover;
+}
+
+.skill .cpp {
+    background: url("C.png") no-repeat;
+    background-size: cover;
+}
+
+.design .ps {
+    background: url("Ps.png") no-repeat;
+    background-size: cover;
+}
+
+.design .ai {
+    background: url("Ai.png") no-repeat;
+    background-size: cover;
+}
+
+.design .pr {
+    background: url("Pr.png") no-repeat;
+    background-size: cover;
+}
+
+.design .ae {
+    background: url("Ae.png") no-repeat;
+    background-size: cover;
+}
+
+.language .ch {
+    background: url("ch.png") no-repeat;
+    background-size: cover;
+}
+
+.language .en {
+    background: url("en.png") no-repeat;
+    background-size: cover;
+}
+
+.language .ja {
+    background: url("ja.png") no-repeat;
+    background-size: cover;
+}
+
+.language .ger {
+    background: url("de.png") no-repeat;
+    background-size: cover;
+}
+
+.skill {
+    margin-left: -2.5rem;
 }
 
 .skill li {
-    margin-top: 86px;
+    margin-top: 5.375rem;
 }
 
 .skill li:first-child {
-    margin-top: 95px;
+    margin-top: 5.938rem;
 }
 
 .design li:first-child {
-    margin-top: 70px;
+    margin-top: 4.375rem;
+}
+
+.language {
+    margin-right: 0;
 }
 
 .language li:first-child {
-    margin-top: 70px;
+    margin-top: 4.375rem;
 }
 
 .language p {
-    margin-top: 28px;
-    font-size: 24px;
+    margin-top: 1.75rem;
+    font-size: 1.5rem;
 }
 
-.skill li:first-child div {
-    margin-right: 3.75rem;
+.ab_body div li div {
+    float: left;
 }
 
-.skill li:nth-child(2) div {
-    margin-left: 2.3rem;
-}
-
-.skill li:nth-child(3) div {
-    margin-right: 5rem;
-}
-
-.design li:first-child div {
-    margin-right: 2.2rem;
-}
-
-.design li:nth-child(2) div {
-    margin-right: 2.81rem;
-}
-
-.design li:nth-child(3) div {
-    margin-left: 1.8rem;
-}
-
-.design li:nth-child(4) div {
-    margin-right: 0.69rem;
-}
-
-.language li:first-child div {
-    margin-right: 1.5rem;
-}
-
-.language li:nth-child(2) div {
-    margin-right: 2rem;
-}
-
-.language li:nth-child(3) div {
-    margin-left: 2.19rem;
-}
-
-.language li:nth-child(4) div {
-    margin-right: 1rem;
+.skill li div {
+    margin-left: 1.938rem;
 }
 
 .language li:nth-child(4) {
-    margin-right: 0.19rem;
+    float: left;
     opacity: .5;
 }
 
 .language .german {
-    font-size: 21px;
+    font-size: 1.313rem;
     font-variant: small-caps;
-    margin: 6px 0 0 0px;
+    margin-top: 0.375rem;
 }
+
+.ab_img {
+    width: 7rem;
+    height: 6.668rem;
+    background-size: cover;
+    float: left;
+}
+
+
+
+
 
 /*************** FOOTER ***************/
 
@@ -372,9 +440,9 @@ footer {
 }
 
 .foot_wrap {
-    width: 1010px;
+    width: 64rem;
     margin: 0 auto;
-    padding: 100px 0 200px 0;
+    padding: 6.25rem 0 12.5rem 0;
 }
 
 .foot_h h3 {
@@ -387,57 +455,63 @@ footer {
 
 .foot_h hr {
     border-color: #666666;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .foot_wrap .icons {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .foot_wrap a {
-    margin-left: 90px;
+    margin-left: 5.625rem;
 }
 
 .foot_wrap a:first-child {
     display: inline-block;
     background: url("twitter.png") no-repeat;
-    width: 65px;
-    height: 64px;
-    margin-left: 77px;
+    width: 4.063rem;
+    height: 4rem;
+    margin-left: 4.813rem;
+    background-size: cover;
 }
 
 .foot_wrap a:nth-child(2) {
     display: inline-block;
     background: url("weibo.png") no-repeat;
-    width: 65px;
-    height: 64px;
+    width: 4.063rem;
+    height: 4rem;
+    background-size: cover;
 }
 
 .foot_wrap a:nth-child(3) {
     display: inline-block;
     background: url("bilibili.png") no-repeat;
-    width: 62px;
-    height: 62px;
+    width: 3.875rem;
+    height: 3.875rem;
+    background-size: cover;
 }
 
 .foot_wrap a:nth-child(4){
     display: inline-block;
     background: url("youtube.png") no-repeat;
-    width: 67px;
-    height: 47px;
-    margin-bottom: 7px;
+    width: 4.188rem;
+    height: 2.938rem;
+    margin-bottom: 0.4375rem;
+    background-size: cover;
 }
 
 .foot_wrap a:nth-child(5) {
     display: inline-block;
     background: url("github.png") no-repeat;
-    width: 63px;
-    height: 61px;
+    width: 3.938rem;
+    height: 3.813rem;
+    background-size: cover;
 }
 
 .foot_wrap a:nth-child(6) {
     display: inline-block;
     background: url("mail.png") no-repeat;
-    width: 61px;
-    height: 61px;
+    width: 3.813rem;
+    height: 3.813rem;
+    background-size: cover;
 }

@@ -3,8 +3,13 @@
     letter-spacing: 6px;
     margin: 120px auto 180px auto;
 }*/
+
+/*body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}*/
+
 .pro_body li p {
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     font-variant: normal;
     color: #ffffff;
     text-align: left;

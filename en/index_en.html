@@ -1,25 +1,3 @@
-<!--
-/////////////////////////////////////////////////////////////////
-
-            　 　 |＼　　 　 　 　 　／|
-            　 　 |＼＼　　 　 　 ／／|
-            　　　 :  ,>　｀´￣｀´　<　′　　契約の予感ッ・・・！！
-             ＿＿＿Ｖ　 　 　 　 　 　Ｖ＿∧,､＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-             ￣￣￣i{　　 ●　　 　 ● }i￣'`'``￣￣￣￣￣￣￣￣￣￣￣￣￣
-            　　　  八//// ､_,_,////八
-            .　　 /　个 . ＿　＿ .个 ',
-            　＿/ 　il 　 ,'　　　 '.　 li　 ',＿_
-
-
-                   さぁ早く 僕と契約を！
-
-
-
-Emoji from http://momokami.net/kotonoha/qb.html
-
-H2O2 2016.5.4
-////////////////////////////////////////////////////////////////////
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +6,9 @@ H2O2 2016.5.4
     <link rel="stylesheet" type="text/css" href="../img/reset.css">
     <link rel="stylesheet" type="text/css" href="../img/main.css">
     <link rel="stylesheet" type="text/css" href="../img/main_en.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="../img/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../img/inside_page.js"></script>
 </head>
 <body>
     <div class="header">
@@ -35,7 +16,7 @@ H2O2 2016.5.4
             <div class="h_wrapper">
                 <h1>Hurry up, We're dreaming.</h1>
                 <p>- M83</p>
-                <a href="#start"></a>
+                <div id="scrollDown"></div>
             </div>
         </div>
         <div class="background_h"><div class="wrapper_h"></div></div>
@@ -90,24 +71,30 @@ H2O2 2016.5.4
                         <h3>Skill</h3>
                         <ul>
                             <li>
-                                <img src="../img/markup.png">
-                                <div>
-                                    <p>HTML</p><br>
-                                    <p class="item2">CSS</p>
+                                <div class="ab_description">
+                                    <div class="ab_img front_end"></div>
+                                    <div class="ab_text">
+                                        <p>HTML</p><br>
+                                        <p class="item2">CSS</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/js.png">
-                                <div>
-                                    <p>JavaScript</p><br>
-                                    <p class="item2">JQuery</p>
+                                <div class="ab_description">
+                                    <div class="ab_img js"></div>
+                                    <div class="ab_text">
+                                        <p>JavaScript</p><br>
+                                        <p class="item2">JQuery</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/C.png">
-                                <div>
-                                    <p>C</p><br>
-                                    <p class="item2">C++</p>
+                                <div class="ab_description">
+                                    <div class="ab_img cpp"></div>
+                                    <div class="ab_text">
+                                        <p>C</p><br>
+                                        <p class="item2">C++</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -116,31 +103,39 @@ H2O2 2016.5.4
                         <h3>Design</h3>
                         <ul>
                             <li>
-                                <img src="../img/Ps.png">
-                                <div>
-                                    <p>Adobe</p><br>
-                                    <p class="item2">Photoshop</p>
+                                <div class="ab_description">
+                                    <div class="ab_img ps"></div>
+                                    <div class="ab_text">
+                                        <p>Adobe</p><br>
+                                        <p class="item2">Photoshop</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/Ai.png">
-                                <div>
-                                    <p>Adobe</p><br>
-                                    <p class="item2">Illustrator</p>
+                                <div class="ab_description">
+                                    <div class="ab_img ai"></div>
+                                    <div class="ab_text">
+                                        <p>Adobe</p><br>
+                                        <p class="item2">Illustrator</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/Pr.png">
-                                <div>
-                                    <p>Adobe</p><br>
-                                    <p class="item2">Premiere Pro</p>
+                                <div class="ab_description">
+                                    <div class="ab_img pr"></div>
+                                    <div class="ab_text">
+                                        <p>Adobe</p><br>
+                                        <p class="item2">Premiere Pro</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/Ae.png">
-                                <div>
-                                    <p>Adobe</p><br>
-                                    <p class="item2">After Effects</p>
+                                <div class="ab_description">
+                                    <div class="ab_img ae"></div>
+                                    <div class="ab_text">
+                                        <p>Adobe</p><br>
+                                        <p class="item2">After Effects</p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -149,28 +144,36 @@ H2O2 2016.5.4
                         <h3>Language</h3>
                         <ul>
                             <li>
-                                <img src="../img/ch.png">
-                                <div>
-                                    <p>Chinese</p>
+                                <div class="ab_description">
+                                    <div class="ab_img ch"></div>
+                                    <div class="ab_text">
+                                        <p>Chinese</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/en.png">
-                                <div>
-                                    <p>English</p>
+                                <div class="ab_description">
+                                    <div class="ab_img en"></div>
+                                    <div class="ab_text">
+                                        <p>English</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/ja.png">
-                                <div>
-                                    <p>Japanese</p>
+                                <div class="ab_description">
+                                    <div class="ab_img ja"></div>
+                                    <div class="ab_text">
+                                        <p>Japanese</p>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <img src="../img/de.png">
-                                <div>
-                                    <p>German</p><br>
-                                    <p class="german"><span>(learning)</span></p>
+                                <div class="ab_description">
+                                    <div class="ab_img ger"></div>
+                                    <div class="ab_text">
+                                        <p>German</p><br>
+                                        <p class="german"><span>(learning)</span></p>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
