@@ -1,0 +1,23 @@
+{
+  "name": "H2O2.me",
+  "homepage": "https://github.com/H2O-2/H2O-2.github.io",
+  "authors": [
+    "H2O2"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^5.0.0",
+    "jquery": "^3.1.1",
+    "jquery-bez": "bez#^1.0.11",
+    "bootstrap": "^3.3.7"
+  }
+}

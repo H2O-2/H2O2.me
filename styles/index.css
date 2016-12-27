@@ -23,7 +23,7 @@ body a {
     z-index: -9999;
     height: 100%;
     width: 100%;
-    background: url("intro.jpg") no-repeat;
+    background: url("../img/intro.jpg") no-repeat;
     background-size: cover;
     opacity: 1;
 }
@@ -35,12 +35,6 @@ body a {
     z-index: -9999;
     max-width: none;
     /*width: 100%;*/
-}
-
-@font-face {
-    font-family: "PingFang SC";
-    src: url('Ultralight.otf');
-    font-weight: 100;
 }
 
 .move {

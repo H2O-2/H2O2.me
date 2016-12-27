@@ -1,32 +1,12 @@
-@font-face {
-    font-family: "PingFang SC";
-    src: url('Ultralight.otf') format("opentype");
-}
-
-
-
-/*@media screen and (max-width: 1024px) {
-    html {
-        font-size: 10px;
+@media (max-width: 991px) {
+    body div.jumbotron div.container h1, body div.jumbotron div.container p {
+        margin: 0 auto;
     }
 
-    div.wrapper_b {
-        width: 700px;
+    body div.jumbotron div.container p {
+        font-size: 2.7rem;
+        margin-top: 3rem;
     }
-}*/
-
-@media screen and (max-width: 1280px) {
-    html {
-        font-size: 12px;
-    }
-
-    div.wrapper_b {
-        width: 800px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    html { font-size:50%; -webkit-text-size-adjust:none; }  /* should render everything * 0.8 */
 }
 
 html, body {
@@ -67,7 +47,7 @@ div.header {
 
 .h_content h1,.h_content p{
     font-family: "PingFang SC", "Open Sans", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #d0d0d0;
     font-variant: small-caps;
     font-weight: 100;
@@ -90,7 +70,7 @@ div.header {
     width: 8.5em;
     height: 5.3em;
     margin: 4% auto 0 auto;
-    background: url("arrow.png") no-repeat;
+    background: url("../img/arrow.png") no-repeat;
 }
 
 div.wrapper_h {
@@ -100,7 +80,7 @@ div.wrapper_h {
     z-index: -99;
     height: 100%;
     width: 100%;
-    background: url("header.jpg") repeat-x;
+    background: url("../img/header.jpg") repeat-x;
     background-size: cover;
     opacity: 1;
     /*-webkit-filter: none;
@@ -117,6 +97,43 @@ div.background_h {
     width: 100%;
     background: black;
     background-size: cover;
+}
+
+
+
+
+div.jumbotron {
+    background: url("../img/header.jpg") no-repeat center right fixed;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+div.jumbotron div.container {
+    position: relative;
+    text-align: center;
+    top: 68%;
+}
+
+div.container h1, div.container p {
+    font-family: "PingFang SC", "Open Sans", sans-serif;
+    font-size: 4rem;
+    color: #d0d0d0;
+    font-variant: small-caps;
+    font-weight: 100;
+    letter-spacing: 0.83rem;
+}
+
+div.container h1 {
+    margin-right: 26%;
+}
+
+div.container p {
+    font-size: 2.9em;
+    margin-left: 54%;
+    letter-spacing: 0.667rem;
 }
 
 /*************** BODY ***************/
@@ -233,7 +250,7 @@ div.background_h {
 }
 
 .p_img {
-    background: url("profile.png") no-repeat;
+    background: url("../img/profile.png") no-repeat;
     width: 14rem;
     height: 13.9rem;
     margin: 0 auto;
@@ -321,57 +338,57 @@ div.background_h {
 }
 
 .skill .front_end {
-    background: url("markup.png") no-repeat;
+    background: url("../img/markup.png") no-repeat;
     background-size: cover;
 }
 
 .skill .js {
-    background: url("js.png") no-repeat;
+    background: url("../img/js.png") no-repeat;
     background-size: cover;
 }
 
 .skill .cpp {
-    background: url("C.png") no-repeat;
+    background: url("../img/C.png") no-repeat;
     background-size: cover;
 }
 
 .design .ps {
-    background: url("Ps.png") no-repeat;
+    background: url("../img/Ps.png") no-repeat;
     background-size: cover;
 }
 
 .design .ai {
-    background: url("Ai.png") no-repeat;
+    background: url("../img/Ai.png") no-repeat;
     background-size: cover;
 }
 
 .design .pr {
-    background: url("Pr.png") no-repeat;
+    background: url("../img/Pr.png") no-repeat;
     background-size: cover;
 }
 
 .design .ae {
-    background: url("Ae.png") no-repeat;
+    background: url("../img/Ae.png") no-repeat;
     background-size: cover;
 }
 
 .language .ch {
-    background: url("ch.png") no-repeat;
+    background: url("../img/ch.png") no-repeat;
     background-size: cover;
 }
 
 .language .en {
-    background: url("en.png") no-repeat;
+    background: url("../img/en.png") no-repeat;
     background-size: cover;
 }
 
 .language .ja {
-    background: url("ja.png") no-repeat;
+    background: url("../img/ja.png") no-repeat;
     background-size: cover;
 }
 
 .language .ger {
-    background: url("de.png") no-repeat;
+    background: url("../img/de.png") no-repeat;
     background-size: cover;
 }
 
@@ -446,7 +463,7 @@ footer {
 }
 
 .foot_h h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Open Sans", sans-serif;
     color: #D4D4D4;
     font-weight: 200;
@@ -468,7 +485,7 @@ footer {
 
 .foot_wrap a:first-child {
     display: inline-block;
-    background: url("twitter.png") no-repeat;
+    background: url("../img/twitter.png") no-repeat;
     width: 4.063rem;
     height: 4rem;
     margin-left: 4.813rem;
@@ -477,7 +494,7 @@ footer {
 
 .foot_wrap a:nth-child(2) {
     display: inline-block;
-    background: url("weibo.png") no-repeat;
+    background: url("../img/weibo.png") no-repeat;
     width: 4.063rem;
     height: 4rem;
     background-size: cover;
@@ -485,7 +502,7 @@ footer {
 
 .foot_wrap a:nth-child(3) {
     display: inline-block;
-    background: url("bilibili.png") no-repeat;
+    background: url("../img/bilibili.png") no-repeat;
     width: 3.875rem;
     height: 3.875rem;
     background-size: cover;
@@ -493,7 +510,7 @@ footer {
 
 .foot_wrap a:nth-child(4){
     display: inline-block;
-    background: url("youtube.png") no-repeat;
+    background: url("../img/youtube.png") no-repeat;
     width: 4.188rem;
     height: 2.938rem;
     margin-bottom: 0.4375rem;
@@ -502,7 +519,7 @@ footer {
 
 .foot_wrap a:nth-child(5) {
     display: inline-block;
-    background: url("github.png") no-repeat;
+    background: url("../img/github.png") no-repeat;
     width: 3.938rem;
     height: 3.813rem;
     background-size: cover;
@@ -510,7 +527,7 @@ footer {
 
 .foot_wrap a:nth-child(6) {
     display: inline-block;
-    background: url("mail.png") no-repeat;
+    background: url("../img/mail.png") no-repeat;
     width: 3.813rem;
     height: 3.813rem;
     background-size: cover;
