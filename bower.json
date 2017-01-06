@@ -18,6 +18,7 @@
     "normalize-css": "normalize.css#^5.0.0",
     "jquery": "^3.1.1",
     "jquery-bez": "bez#^1.0.11",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "font-awsome#^4.7.0"
   }
 }

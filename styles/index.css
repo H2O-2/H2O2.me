@@ -1,3 +1,9 @@
+@media (max-width: 991px) {
+    body div.wrapper {
+        opacity: .3;
+    }
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -23,7 +29,7 @@ body a {
     z-index: -9999;
     height: 100%;
     width: 100%;
-    background: url("../img/intro.jpg") no-repeat;
+    background: url("../img/intro.jpg") no-repeat top right;
     background-size: cover;
     opacity: 1;
 }
@@ -92,7 +98,7 @@ body a {
     text-align: center;
     color: #d8d8d8;
     font-weight: 100;
-    font-family: "PingFang SC", sans-serif;
+    font-family: "PingFang SC", "Helvetica Neue", "Microsoft YaHei",sans-serif;
     text-shadow: 0 0 1px white, 0 0 3px #def1f5;
     cursor: pointer;
     height: 100%;

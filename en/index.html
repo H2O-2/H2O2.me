@@ -4,199 +4,381 @@
     <meta charset="UTF-8">
     <title>H2O2</title>
     <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/main_en.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.bez.min.js"></script>
     <script type="text/javascript" src="../scripts/inside_page.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="h_content">
-            <div class="h_wrapper">
-                <h1>Hurry up, We're dreaming.</h1>
-                <p>- M83</p>
-                <div id="scrollDown"></div>
-            </div>
+    <nav><!-- Navigation bar Plz --></nav>
+    <div class="jumbotron header">
+        <div class="container">
+            <h1>Hurry up, We're dreaming.</h1>
+            <p>- M83</p>
         </div>
-        <div class="background_h"><div class="wrapper_h"></div></div>
+        <div id="scrollDown"></div>
     </div>
-    <div class="web_body">
-        <div class="wrapper_b">
-            <div class="profile" id="start">
-                <div class="head">
-                    <h2>Profile</h2>
-                    <hr>
-                </div>
-                <div class="pro_body">
-                    <div class="pro_left">
-                        <ul>
-                            <li class="p_blue left_1">
-                                <p>From Mainland China</p>
-                            </li>
-                            <li class="p_orange left_2">
-                                <p>Currently studying Computer<br>
-                                    Science at the University<br>of Waterloo
-                                </p>
-                            </li>
-                            <li class="p_blue left_3">
-                                <p>Love coding and designing</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="pro_right">
-                        <ul>
-                            <li class="p_blue right_1">
-                                <p>Anime Fan</p>
-                            </li>
-                            <li class="p_orange right_2">
-                                <p>Learning a variety of skills.<br>Now focusing on front-end<br>
-                                    web development</p>
-                            </li>
-                            <li class="p_blue right_3">
-                                <p>Not good at making self intro :)</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p_img"></div>
-                </div>
+    <div class="profile container wrapper" id="start">
+        <h2 class="head">Profile</h2>
+        <div class="pro_body row">
+            <div class="pro_left">
+                <ul>
+                    <li class="p_blue left_1">
+                        <p>From Mainland China</p>
+                    </li>
+                    <li class="p_orange left_2">
+                        <p>Currently studying Computer<br>
+                            Science at the University<br>
+                            of Waterloo
+                        </p>
+                    </li>
+                    <li class="p_blue left_3">
+                        <p>Love coding and designing</p>
+                    </li>
+                </ul>
             </div>
-            <div class="abilities">
-                <div class="head">
-                    <h2>Abilities</h2>
-                    <hr>
-                </div>
-                <div class="ab_body">
-                    <div class="skill ab_lst">
-                        <h3>Skill</h3>
-                        <ul>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img front_end"></div>
-                                    <div class="ab_text">
-                                        <p>HTML</p><br>
-                                        <p class="item2">CSS</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img js"></div>
-                                    <div class="ab_text">
-                                        <p>JavaScript</p><br>
-                                        <p class="item2">JQuery</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img cpp"></div>
-                                    <div class="ab_text">
-                                        <p>C</p><br>
-                                        <p class="item2">C++</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="design ab_lst">
-                        <h3>Design</h3>
-                        <ul>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ps"></div>
-                                    <div class="ab_text">
-                                        <p>Adobe</p><br>
-                                        <p class="item2">Photoshop</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ai"></div>
-                                    <div class="ab_text">
-                                        <p>Adobe</p><br>
-                                        <p class="item2">Illustrator</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img pr"></div>
-                                    <div class="ab_text">
-                                        <p>Adobe</p><br>
-                                        <p class="item2">Premiere Pro</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ae"></div>
-                                    <div class="ab_text">
-                                        <p>Adobe</p><br>
-                                        <p class="item2">After Effects</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="language ab_lst">
-                        <h3>Language</h3>
-                        <ul>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ch"></div>
-                                    <div class="ab_text">
-                                        <p>Chinese</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img en"></div>
-                                    <div class="ab_text">
-                                        <p>English</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ja"></div>
-                                    <div class="ab_text">
-                                        <p>Japanese</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ab_description">
-                                    <div class="ab_img ger"></div>
-                                    <div class="ab_text">
-                                        <p>German</p><br>
-                                        <p class="german"><span>(learning)</span></p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+            <div class="pro_right">
+                <ul>
+                    <li class="p_blue right_1">
+                        <p>Anime Fan_(:з」∠)_</p>
+                    </li>
+                    <li class="p_orange right_2">
+                        <p>Learning a variety of skills.<br>Now focusing on web development</p>
+                    </li>
+                    <li class="p_blue right_3">
+                        <p>Not good at making self intro :)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_img"></div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="p_blue">
+                        <p>From Mainland China</p>
+                    </li>
+                    <li class="p_orange">
+                        <p>Currently studying Computer Science at the University<br>
+                            of Waterloo</p>
+                    </li>
+                    <li class="p_blue">
+                        <p>Love coding and designing</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 second-list">
+                <ul>
+                    <li class="p_blue">
+                        <p>Anime Fan_(:з」∠)_</p>
+                    </li>
+                    <li class="p_orange">
+                        <p>Learning a variety of skills. Now focusing on web development</p>
+                    </li>
+                    <li class="p_blue">
+                        <p>Not good at making self intro :)</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="foot_wrap">
+    <div class="abilities container wrapper">
+        <h2 class="head">Abilities</h2>
+        <div class="part">
+            <div class="section_title">
+                <h3>Coding Related</h3>
+                <a href="https://github.com/H2O-2" target="_blank"><i class="fa fa-3x fa-github"></i></a>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Programming</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>C/C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Python</li>
+                        <li>Bash Script</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Web Development</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>HTML(5)</li>
+                        <li>CSS(3)</li>
+                        <li>SCSS</li>
+                        <li>Bootstrap</li>
+                        <li>Gulp</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Native JavaScript</li>
+                        <li>AngularJS</li>
+                        <li>jQuery</li>
+                        <li>AJAX</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Database</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="section_title">
+                <h3>Design</h3>
+                <a href="https://www.youtube.com/channel/UCmP0n7VbIeAEBjVfsp7-15g" target="_blank"><i class="fa fa-3x fa-youtube-play"></i></a>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Image/Icon Design</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>PyxelEdit</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Video Design</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Adobe Premiere Pro</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Adobe After Effects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>3D Modeling</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li class="learning">Blender(Learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="section_title">
+                <h3>Tools/Others</h3>
+                <i class="fa fa-3x fa-wrench"></i>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>IDEs</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>XCode</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>JetBrain IDEs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Version Control</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>OS</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-3">
+                    <ul class="a_list">
+                        <li>macOS/OSX</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="a_list">
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="a_list">
+                        <li>Windows</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Language</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Chinese(Mother Tongue)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Japanese</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>English</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li class="learning">German(Learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project container wrapper">
+        <h2 class="head">Projects</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/H2O2.me" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="../img/site.png" alt="Personal Website"/>
+                        <figcaption>
+                            <h4>Personal Website</h4>
+                            <hr>
+                            <p>My personal website, designed using Photoshop and developed using HTML, CSS, Bootstrap
+                                and jQuery.<br><span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/Pacomura" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="../img/pacomura.png" alt="Pacomura"/>
+                        <figcaption>
+                            <h4>Pacomura</h4>
+                            <hr>
+                            <p>A Madoka Magica version of Pacman. Developed from scratch using Native JavaScript and
+                                HTML5 Canvas<br><span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/CC3K" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="../img/cc3k.jpg" alt="CC3K"/>
+                        <figcaption>
+                            <h4>CC3K</h4>
+                            <hr>
+                            <p>A Rogue-like game on terminal developed in a 3-person team from scratch using C++.<br>
+                                <span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://www.youtube.com/watch?v=iQ0gQJqZphM" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="../img/mad.jpg" alt="Into the Night"/>
+                        <figcaption>
+                            <h4>Into The Night</h4>
+                            <hr>
+                            <p>Anime Music Video made by Adobe Premiere Pro and Adobe After Effects.<br>
+                                <span><i class="fa fa-2x fa-youtube-play"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron footer">
+        <footer class="container wrapper">
+            <!--------------------- Opacity, Position and Gauss blur effect on background ------------------->
             <div class="foot_h">
                 <h3>Contact & More</h3>
                 <hr>
             </div>
-            <div class="icons">
-                <a href="https://twitter.com/MisakaMikoto00" target="_blank"></a>
-                <a href="http://www.weibo.com/u/3189713534" target="_blank"></a>
-                <a href="http://space.bilibili.com/524991" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCmP0n7VbIeAEBjVfsp7-15g" target="_blank"></a>
-                <a href="https://github.com/H2O-2" target="_blank"></a>
-                <a href="mailto:h2o2public@sina.com"></a>
+            <!------------------ Hover effects and responsive margin & padding plz ---------------->
+            <div class="icons row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://twitter.com/MisakaMikoto00" target="_blank"><span><i class="fa fa-3x fa-twitter"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="http://www.weibo.com/u/3189713534" target="_blank"><span><i class="fa fa-3x fa-weibo"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2" id="bilibili">
+                    <a href="http://space.bilibili.com/524991" target="_blank"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://www.youtube.com/channel/UCmP0n7VbIeAEBjVfsp7-15g" target="_blank">
+                        <span><i class="fa fa-3x fa-youtube-play"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://github.com/H2O-2" target="_blank"><span><i class="fa fa-3x fa-github"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="mailto:h2o2public@sina.com"><span><i class="fa fa-3x fa-envelope"></i></span></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        <div class="footer_bg"></div>
+    </div>
 </body>
 </html>
