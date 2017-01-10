@@ -6,7 +6,11 @@
     text-align: left;
 }
 
-.pro_body .pro_right {
-    margin-right: 3rem;
+.pro_body .pro_left {
+    margin-left: 2em;
+}
+
+.pro_body .pro_left {
+    margin-right: -4em;
 }
 

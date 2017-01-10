@@ -312,7 +312,8 @@ div.footer footer.wrapper {
   margin-top: 5rem; }
 
 footer div.icons {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  text-align: center; }
 
 footer div.icons a span i {
   color: #ffa800; }
@@ -323,8 +324,8 @@ footer div.icons a {
 footer div.icons div#bilibili a {
   display: inline-block;
   background: url("../img/bilibili.png") no-repeat;
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
   background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
