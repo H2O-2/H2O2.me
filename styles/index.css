@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-size: 12px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -20,6 +21,10 @@ body {
 
 body a {
     color: #000;
+}
+
+h2 {
+  font-size: 100%;
 }
 
 .wrapper {

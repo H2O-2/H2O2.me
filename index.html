@@ -1,77 +1,351 @@
-<!--
-/////////////////////////////////////////////////////////////////
-
-            　 　 |＼　　 　 　 　 　／|
-            　 　 |＼＼　　 　 　 ／／|
-            　　　 :  ,>　｀´￣｀´　<　′　　契約の予感ッ・・・！！
-             ＿＿＿Ｖ　 　 　 　 　 　Ｖ＿∧,､＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-             ￣￣￣i{　　 ●　　 　 ● }i￣'`'``￣￣￣￣￣￣￣￣￣￣￣￣￣
-            　　　  八//// ､_,_,////八
-            .　　 /　个 . ＿　＿ .个 ',
-            　＿/ 　il 　 ,'　　　 '.　 li　 ',＿_
-
-
-                   さぁ早く 僕と契約を！
-
-
-
-Emoji from http://momokami.net/kotonoha/qb.html
-
-H2O2 2016.5.4
-////////////////////////////////////////////////////////////////////
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>H2O2</title>
-    <link rel="shortcut icon" href="http://h2o2.me/img/favicon.ico">
-    <!-- inject:css -->
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <!-- endinject -->
-</head>
-<body>
-    <!--------------------------------------- Loading Page plz ------------------------------------------>
-    <div class="wrapper"><!--<img src="img/background_test.jpg"> --></div>
-    <div class="index_text">
-        <div class="ch">
-            <a href="ch/" class="option">
-                <div class="move" id="move_ch"></div>
-                <h2>简体中文</h2>
-                <p class="welcome">欢迎</p>
-            </a>
-        </div>
-        <div class="en">
-            <a href="en/" class="option">
-                <div class="move" id="move_en"></div>
-                <h2>English</h2>
-                <p class="welcome">Welcome</p>
-            </a>
-        </div>
-        <div class="jp">
-            <a href="jp/" class="option">
-                <div class="move" id="move_jp"></div>
-                <h2>日本語</h2>
-                <p class="welcome">ようこそ</p>
-            </a>
-        </div>
-    </div>
-    <!-- inject:js -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main_en.css">
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.bez.min.js"></script>
-    <script type="text/javascript" src="scripts/frontPage.js"></script>
-    <!-- endinject -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script type="text/javascript" src="scripts/inside_page.js"></script>
+</head>
+<body>
+    <nav><!-- Navigation bar Plz --></nav>
+    <div class="jumbotron header">
+        <div class="container">
+            <h1>Hurry up, We're dreaming.</h1>
+            <p>- M83</p>
+        </div>
+        <div id="scrollDown"></div>
+    </div>
+    <div class="profile container wrapper" id="start">
+        <h2 class="head">Profile</h2>
+        <div class="pro_body row">
+            <div class="pro_left">
+                <ul>
+                    <li class="p_blue left_1">
+                        <p>From Mainland China</p>
+                    </li>
+                    <li class="p_orange left_2">
+                        <p>Currently studying Computer<br>
+                            Science at the University<br>
+                            of Waterloo
+                        </p>
+                    </li>
+                    <li class="p_blue left_3">
+                        <p>Love coding and designing</p>
+                    </li>
+                </ul>
+            </div>
 
-        ga('create', 'UA-90232041-1', 'auto');
-        ga('send', 'pageview');
+            <div class="pro_right">
+                <ul>
+                    <li class="p_blue right_1">
+                        <p>Trilingual (working on the fourth one!)</p>
+                    </li>
+                    <li class="p_orange right_2">
+                        <p>Learning a variety of skills.<br>Now focusing on computer graphics.</p>
+                    </li>
+                    <li class="p_blue right_3">
+                        <p>Not good at making self intro :)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_img"></div>
+        </div>
+    </div>
+    <div class="abilities container wrapper">
+        <h2 class="head">Abilities</h2>
+        <div class="part">
+            <div class="section_title">
+                <h3>Coding Related</h3>
+                <a href="https://github.com/H2O-2" target="_blank"><i class="fa fa-3x fa-github"></i></a>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Programming</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>C/C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Python</li>
+                        <li>Typescript</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Frameworks / Libraries</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>OpenGL</li>
+                        <li>WebGL</li>
+                        <li>React</li>
+                        <li>AngularJS</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>SDL2</li>
+                        <li>QT5</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Database</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="section_title">
+                <h3>Design</h3>
+                <a href="https://www.youtube.com/channel/UCmP0n7VbIeAEBjVfsp7-15g" target="_blank"><i class="fa fa-3x fa-youtube-play"></i></a>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Image/Icon Design</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="a_list">
+                        <li>PyxelEdit</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Video Design</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Adobe Premiere Pro</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Adobe After Effects</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>3D Modeling</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Blender</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="section_title">
+                <h3>Tools / Others</h3>
+                <i class="fa fa-3x fa-wrench"></i>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Tools</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Vim</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title first_field">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Markup Languages & More</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>HTML5</li>
+                        <li>LaTeX</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>CSS3</li>
+                        <li>Markdown</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Version Control</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="field_title">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                <h5>Language</h5>
+            </div>
+            <div class="a_detail row">
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Chinese(Mother Tongue)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>Japanese (Level N1)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li>English</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="a_list">
+                        <li class="learning">German(Learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project container wrapper">
+        <h2 class="head">Projects</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/particleGL" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="img/particles.jpg" alt="ParticleGL"/>
+                        <figcaption>
+                            <h4>ParticleGL</h4>
+                            <hr>
+                            <p>An OpenGL particle generation tool inspired by Trapcode Particular<br>
+                                <span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/ritsu" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="img/ritsu.jpg" alt="Ritsu"/>
+                        <figcaption>
+                            <h4>Ritsu</h4>
+                            <hr>
+                            <p>Static site generator made by TypeScript & Node.js.<br>
+                                <span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://github.com/H2O-2/Pacomura" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="img/pacomura.png" alt="Pacomura"/>
+                        <figcaption>
+                            <h4>Pacomura</h4>
+                            <hr>
+                            <p>A Madoka Magica version of Pacman. Developed from scratch using Native JavaScript and
+                                HTML5 Canvas<br><span><i class="fa fa-2x fa-github"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <a href="https://www.youtube.com/watch?v=iQ0gQJqZphM" target="_blank">
+                    <figure>
+                        <div class="figure_bg"></div>
+                        <img src="img/mad.jpg" alt="Into the Night"/>
+                        <figcaption>
+                            <h4>Into The Night</h4>
+                            <hr>
+                            <p>Anime Music Video made by Adobe Premiere Pro and Adobe After Effects.<br>
+                                <span><i class="fa fa-2x fa-youtube-play"></i></span></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
 
-    </script>
-    <noscript><h3>NEED JAVASCRIPT!</h3></noscript>
+    <div class="jumbotron footer">
+        <footer class="container wrapper">
+            <!--------------------- Opacity, Position and Gauss blur effect on background ------------------->
+            <div class="foot_h">
+                <h3>Contact & More</h3>
+                <hr>
+            </div>
+            <!------------------ Hover effects and responsive margin & padding plz ---------------->
+            <div class="icons row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://twitter.com/MisakaMikoto00" target="_blank"><span><i class="fa fa-3x fa-twitter"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="http://www.weibo.com/u/3189713534" target="_blank"><span><i class="fa fa-3x fa-weibo"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2" id="bilibili">
+                    <a href="http://space.bilibili.com/524991" target="_blank"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://www.youtube.com/channel/UCmP0n7VbIeAEBjVfsp7-15g" target="_blank">
+                        <span><i class="fa fa-3x fa-youtube-play"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="https://github.com/H2O-2" target="_blank"><span><i class="fa fa-3x fa-github"></i></span></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <a href="mailto:h2o2public@sina.com"><span><i class="fa fa-3x fa-envelope"></i></span></a>
+                </div>
+            </div>
+        </footer>
+        <div class="footer_bg"></div>
+    </div>
 </body>
 </html>
