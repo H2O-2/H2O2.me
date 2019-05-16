@@ -49,7 +49,7 @@ function headerFunc() {
     var scroll = $('div#scrollDown');
     $('.header').css({ height: ($(window).height()) +'px' });
     text.fadeIn(1200);
-    if ($(window).width() < 991) {
+    if ($(window).width() <= 991) {
         text.children('h1').css({marginRight: "20%", fontSize: "3rem"}).animate({marginRight: "0"}, 1200);
         text.children('p').css({marginLeft: "20%", fontSize: "2rem", marginTop: "3rem"}).animate({marginLeft: "0"}, 1200);
     } else {
@@ -65,7 +65,7 @@ function headerFunc() {
 function proResponse() {
     var proColumn = $('.pro_body div.col-md-6');
 
-    if ($(window).width() < 991) {
+    if ($(window).width() <= 1366) {
         $('.pro_left').hide();
         $('.pro_right').hide();
         proColumn.show();

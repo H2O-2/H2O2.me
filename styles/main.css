@@ -330,9 +330,10 @@ footer div.icons div#bilibili a {
   body div.profile div.pro_body div.col-xs-6 br {
     display: none; }
 }
+
 @media (max-width: 991px) {
   div.wrapper {
-    padding: 2rem 15rem; }
+    padding: 2rem 0rem; }
 
   .profile .pro_body {
     margin-top: 8rem; }
@@ -341,7 +342,17 @@ footer div.icons div#bilibili a {
     background-attachment: scroll; }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
+  .col-md-6, .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .abilities .col-md-6, .abilities .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   div.project figure figcaption {
     padding: 1rem 2rem;
   }
@@ -357,6 +368,10 @@ footer div.icons div#bilibili a {
 
   div.project figure figcaption p {
     font-size: 1rem;
+  }
+
+  body div.wrapper p, body div.wrapper li {
+    font-size: 2rem;
   }
 }
 
